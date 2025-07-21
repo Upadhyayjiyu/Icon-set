@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Icon Set</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="top-bar">
+    <input type="text" id="searchInput" placeholder="Search icons..." />
+    <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+  </div>
+
+  <section class="icon-container">
+    <h1>Our Services</h1>
+    <div class="icons" id="iconGrid">
+      <div class="icon-card" data-label="Cart" onclick="iconClicked('Cart')" title="Add to cart">
+        <img src="https://img.icons8.com/fluency/96/shopping-cart.png" alt="Cart">
+        <p>Cart</p>
+      </div>
+      <div class="icon-card" data-label="Shipping" onclick="iconClicked('Shipping')" title="Shipping info">
+        <img src="https://img.icons8.com/color/96/parcel.png" alt="Shipping">
+        <p>Shipping</p>
+      </div>
+      <div class="icon-card" data-label="Size" onclick="iconClicked('Size')" title="Size guide">
+        <img src="https://img.icons8.com/color/96/small-business.png" alt="Size">
+        <p>Size Guide</p>
+      </div>
+      <div class="icon-card" data-label="Wishlist" onclick="iconClicked('Wishlist')" title="Add to wishlist">
+        <img src="https://img.icons8.com/emoji/96/red-heart.png" alt="Wishlist">
+        <p>Wishlist</p>
+      </div>
+      <div class="icon-card" data-label="Support" onclick="iconClicked('Support')" title="Customer support">
+        <img src="https://img.icons8.com/color/96/customer-support.png" alt="Support">
+        <p>Support</p>
+      </div>
+      <div class="icon-card" data-label="Payment" onclick="iconClicked('Payment')" title="Secure payment">
+        <img src="https://img.icons8.com/fluency/96/bank-card-back-side.png" alt="Payment">
+        <p>Payment</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
